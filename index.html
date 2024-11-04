@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Notları </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Giriş Yap</h2>
+        <form id="login-form">
+            <input type="password" id="password" placeholder="Şifre" required>
+            <button type="submit">Giriş</button>
+        </form>
+        <p id="message" style="display: none; color: red;">Yanlış şifre! Lütfen tekrar deneyin.</p>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- Mevcut içeriğinizi buraya ekleyeceğiz -->
+        <audio id="myAudio">
+            <source src="muzik.mp3" type="audio/mp3">
+            Tarayıcınız müziği desteklemiyor.
+        </audio>
+
+        <div class="container">
+            <h1>🎂İYİ Kİ DOĞDUN PRENSESİMMM🎂</h1>
+            <p>💖</p>
+
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+
+            <!-- Buton -->
+            <button onclick="playMusic()" class="play-button">Buraya tıklamayı unutma, seni seviyorum</button>
+        </div>
+
+        <!-- Fotoğraf Galerisi -->
+        <div class="gallery">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>    <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <img src="foto1.png" alt="Sevdiğin bir an">
+            <img src="foto2.png" alt="Bir başka özel an">
+            <img src="foto3.png" alt="En sevdiğin fotoğraf">
+            <img src="foto4.png" alt="Bir anı daha">
+            <img src="foto5.png" alt="Güzel bir anı">
+            <img src="foto6.png" alt="Özel bir an daha">
+            <img src="foto7.png" alt="Bir anı daha">
+            <img src="foto8.png" alt="Başka bir güzel an">
+        </div>
+
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+
+        <!-- Daha Fazla İçerik -->
+        <div class="more-content">
+
+
+            <h2>Seni Seviyorum</h2>
+
+
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+
+        </div>
+
+
+        <div class="message-container">
+            <p>
+                Son fotoğraftaki günü hatırlıyorum fark ettirmesem de senin kadar bende heyecanlıydım.
+                Seni gerçekten ilk gördüğüm, sarıldığım, kokunu içime çektiğim
+                her gördüğümde içimin gittiği milyon kere görsem de izlemeye doyamadığım yanaklarını öptüğüm o gün.
+                Sen heyecandan titriyordun ve gülüyordun.
+                Gülüşünü görmek o zaman da çok güzeldi ondan sonra yaşanacaklar gibi. Yanımda olmanı, bir şeylere gülmeni, seni güldürmeyi çok seviyorum.
+                Aşkımızı gören ilk şehir Zonguldak oldu. Eskişehir, Çanakkale, Balıkesir, Karabük ve gelecekte eklenecek niceleri. Beraber görmediklerimizi
+                görmek, bize ait yolların, sokakların, bankların olması tarif edilemez bir şey. Bir sürü fotoğraflar, videolar, ileride beraber yan yana otururken
+                birbirimize anlatıp duygulanacağımız anılar biriktiriyoruz. Keşke hep yan yana olabilseydik daha çok anı biriktirebilirdik seni daha çok görebilir, sarılabilir,
+                öpebilirdim ama şimdi bunun hayalini kuruyorum. Bu sürecin elbet sonu olacak, hep yan yana olacağımız zamanlar gelecek. Hayalini kurduğum şeyi sana söylemiştim,
+                çevremdeki her şeyde sen ol, kokun olsun evimizin her köşesinde sen ol, sana ait şeyler olsun, baktığım dokunduğum her şeyde seni hissedeyim, senin benim yanımda
+                yaşadığını hissedeyim, evimiz sana bahsettiğim o hisle bürünsün.Umarım o günler hemen gelir. Seni çokkk seviyorumm bitanemm iyi ki doğdun iyi ki benimlesinnn.
+            </p>
+        </div>
+
+
+
+    </div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+    </div>
+
+    <script>
+        const correctPassword = '123'; // Şifre
+        const form = document.getElementById('login-form');
+        const passwordInput = document.getElementById('password');
+        const message = document.getElementById('message');
+        const content = document.getElementById('content');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const password = passwordInput.value;
+            if (password === correctPassword) {
+                content.style.display = 'block';
+                message.style.display = 'none';
+                form.style.display = 'none';
+            } else {
+                message.style.display = 'block';
+            }
+        });
+    </script>
+
+</body>
+</html>
